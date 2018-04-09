@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Documents/PycharmProjects/CTPy/.idea/CTPy.iml" filepath="$USER_HOME$/Documents/PycharmProjects/CTPy/.idea/CTPy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RapaNuiSim.iml" filepath="$PROJECT_DIR$/.idea/RapaNuiSim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seriationCT/.idea/seriationCT.iml" filepath="$PROJECT_DIR$/../seriationCT/.idea/seriationCT.iml" />
+    </modules>
+  </component>
+</project>

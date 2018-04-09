@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="SUID" attr.type="long" for="node" id="SUID"/>
+    <key attr.name="shared name" attr.type="string" for="node" id="shared name"/>
+    <key attr.name="name" attr.type="string" for="node" id="name"/>
+    <key attr.name="selected" attr.type="boolean" for="node" id="selected"/>
+    <key attr.name="x_coord" attr.type="int" for="node" id="x_coord"/>
+    <key attr.name="y_coord" attr.type="int" for="node" id="y_coord"/>
+    <key attr.name="SUID" attr.type="long" for="edge" id="SUID"/>
+    <key attr.name="shared name" attr.type="string" for="edge" id="shared name"/>
+    <key attr.name="shared interaction" attr.type="string" for="edge" id="shared interaction"/>
+    <key attr.name="name" attr.type="string" for="edge" id="name"/>
+    <key attr.name="selected" attr.type="boolean" for="edge" id="selected"/>
+    <key attr.name="interaction" attr.type="string" for="edge" id="interaction"/>
+    <key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+    <key attr.name="SUID" attr.type="long" for="graph" id="SUID"/>
+    <key attr.name="shared name" attr.type="string" for="graph" id="shared name"/>
+    <key attr.name="name" attr.type="string" for="graph" id="name"/>
+    <key attr.name="selected" attr.type="boolean" for="graph" id="selected"/>
+    <key attr.name="__Annotations" attr.type="string" for="graph" id="__Annotations"/>
+    <graph edgedefault="directed" id="Fully Connected Network -5">
+        <node id="94">
+            <data key="SUID">94</data>
+            <data key="shared name">island_4</data>
+            <data key="name">island_4</data>
+            <data key="selected">false</data>
+            <data key="x_coord">30</data>
+            <data key="y_coord">10</data>
+        </node>
+        <node id="93">
+            <data key="SUID">93</data>
+            <data key="shared name">island_3</data>
+            <data key="name">island_3</data>
+            <data key="selected">false</data>
+            <data key="x_coord">20</data>
+            <data key="y_coord">30</data>
+        </node>
+        <node id="92">
+            <data key="SUID">92</data>
+            <data key="shared name">island_1</data>
+            <data key="name">island_1</data>
+            <data key="selected">false</data>
+            <data key="x_coord">10</data>
+            <data key="y_coord">10</data>
+        </node>
+        <node id="91">
+            <data key="SUID">91</data>
+            <data key="shared name">island_5</data>
+            <data key="name">island_5</data>
+            <data key="selected">false</data>
+            <data key="x_coord">20</data>
+            <data key="y_coord">0</data>
+        </node>
+        <node id="90">
+            <data key="SUID">90</data>
+            <data key="shared name">island_2</data>
+            <data key="name">island_2</data>
+            <data key="selected">false</data>
+            <data key="x_coord">10</data>
+            <data key="y_coord">20</data>
+        </node>
+        <edge source="93" target="94">
+            <data key="SUID">104</data>
+            <data key="shared name">Node 4 (interaction type) Node 5</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 4 (interaction type) Node 5</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">1.0</data>
+        </edge>
+        <edge source="92" target="94">
+            <data key="SUID">103</data>
+            <data key="shared name">Node 3 (interaction type) Node 5</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 3 (interaction type) Node 5</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">0.5</data>
+        </edge>
+        <edge source="92" target="93">
+            <data key="SUID">102</data>
+            <data key="shared name">Node 3 (interaction type) Node 4</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 3 (interaction type) Node 4</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">0.5</data>
+        </edge>
+        <edge source="91" target="94">
+            <data key="SUID">101</data>
+            <data key="shared name">Node 2 (interaction type) Node 5</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 2 (interaction type) Node 5</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">1.0</data>
+        </edge>
+        <edge source="91" target="93">
+            <data key="SUID">100</data>
+            <data key="shared name">Node 2 (interaction type) Node 4</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 2 (interaction type) Node 4</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">0.5</data>
+        </edge>
+        <edge source="91" target="92">
+            <data key="SUID">99</data>
+            <data key="shared name">Node 2 (interaction type) Node 3</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 2 (interaction type) Node 3</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">1.0</data>
+        </edge>
+        <edge source="90" target="94">
+            <data key="SUID">98</data>
+            <data key="shared name">Node 1 (interaction type) Node 5</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 1 (interaction type) Node 5</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">0.5</data>
+        </edge>
+        <edge source="90" target="93">
+            <data key="SUID">97</data>
+            <data key="shared name">Node 1 (interaction type) Node 4</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 1 (interaction type) Node 4</data>
+            <data key="selected">true</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">1.0</data>
+        </edge>
+        <edge source="90" target="92">
+            <data key="SUID">96</data>
+            <data key="shared name">Node 1 (interaction type) Node 3</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 1 (interaction type) Node 3</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">1.0</data>
+        </edge>
+        <edge source="90" target="91">
+            <data key="SUID">95</data>
+            <data key="shared name">Node 1 (interaction type) Node 2</data>
+            <data key="shared interaction">interaction type</data>
+            <data key="name">Node 1 (interaction type) Node 2</data>
+            <data key="selected">false</data>
+            <data key="interaction">interaction type</data>
+            <data key="weight">0.5</data>
+        </edge>
+    </graph>
+</graphml>
