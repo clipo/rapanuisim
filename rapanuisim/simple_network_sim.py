@@ -70,7 +70,7 @@ def main():
     parser.add_argument("--devel", help="Use only half of the available CPU cores", type=int, default=1)
     parser.add_argument("--dbhost", help="database hostname, defaults to localhost", default="localhost")
     parser.add_argument("--dbport", help="database port, defaults to 27017", default="27017")
-    parser.add_argument("--stepsize", help="size of sample by proporition", type=float, default=1.0)
+    parser.add_argument("--stepsize", help="size of sample by proportion", type=float, default=1.0)
     parser.add_argument("--reps", help="Replicated populations per parameter set", type=int, default=4)
     parser.add_argument("--networkfile", help="Name of GML file representing the  network model for this simulation",
                         required=True, type=str)
@@ -120,17 +120,17 @@ def main():
     log.info("Minimum burn in time given popsize and theta: %s", burn_time)
 
     initial_distribution = rapanuisim.utils.constructUniformAllelicDistribution(config.maxinittraits)
-    log.debug("Initial allelic distribution (for each locus): %s", initial_distribution)
+    log.info("Initial allelic distribution (for each locus): %s", initial_distribution)
 
     #innovation_rate = pypopgen.wf_mutation_rate_from_theta(config.popsize, config.innovrate)
     innovation_rate = float(config.innovrate)
-    log.debug("Per-locus innov rate within populations: %s", innovation_rate)
+    log.info("Per-locus innov rate within populations: %s", innovation_rate)
 
 
     # Construct a demographic model from a collection of network slices which represent a temporal network
     # of changing subpopulations and interaction strengths.  This object is Callable, and simply is handed
     # to the mating function which applies it during the copying process
-    networkmodel = demo.TemporalNetwork( networkmodel_path=config.networkfile,
+    networkmodel = demo.NetworkModel( networkmodel=config.networkfile,
                                          simulation_id=sim_id,
                                          sim_length=config.simlength,
                                          burn_in_time=burn_time,
