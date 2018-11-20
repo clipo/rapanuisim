@@ -8,9 +8,9 @@ import simuOpt, sys
 simuOpt.setOptions(alleleType='long',optimized=False,quiet=True)
 import simuPOP as sim
 import uuid
-import ctpy.data as data
-import ctpy.utils as utils
-import ctpy.math as cpm
+import rapanuisim.data as data
+import rapanuisim.utils as utils
+import rapanuisim.math as cpm
 import ming
 import logging as log
 import pprint as pp
@@ -79,7 +79,6 @@ ming.configure(**config)
 sim_id = uuid.uuid4().urn
 
 
-
 log.info("Beginning simulation run: %s", sim_id)
 
 
@@ -89,12 +88,9 @@ log.info("Starting data collection at generation: %s", beginCollectingData)
 totalSimulationLength = beginCollectingData + args.length
 log.info("Simulation will sample %s generations after stationarity", args.length)
 
+data.storeSimulationData(args.popsize,args.mutationrate,sim_id,args.samplesize,args.replications,args.numloci,__file__,args.numloci,simconfig.MAXALLELES)
 
-
-
-data.storeSimulationData(args.popsize,args.mutationrate,sim_id,args.samplesize,args.replications,args.numloci,__file__,args.numalleles,simconfig.MAXALLELES)
-
-initial_distribution = utils.constructUniformAllelicDistribution(args.numalleles)
+initial_distribution = utils.constructUniformAllelicDistribution(args.numloci)
 log.info("Initial allelic distribution: %s", initial_distribution)
 
 pop = sim.Population(size=args.popsize, ploidy=1, loci=args.numloci)
