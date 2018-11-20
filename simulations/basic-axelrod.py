@@ -44,11 +44,11 @@ args.add_argument("--mutationrate",
               type=float,
               help="Rate of individual innovations/mutations per generation (i.e., noise factor)")
 args.add_argument("--numloci",
-              default=2,
+              default=30,
               type=int,
               help="Number of loci to model (number of features)")
 args.add_argument("--states",
-              default=2,
+              default=10,
               type=int,
               help="Number of states each locus or feature can take")
 args.add_argument("--experiment_name",
