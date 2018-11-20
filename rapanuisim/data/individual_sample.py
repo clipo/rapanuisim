@@ -27,12 +27,12 @@ def _get_dataobj_id():
     """
     return 'individuals'
 
+
 def _get_collection_id():
     """
     :return: returns the collection name for this data object
     """
     return rapanuisim.data.generate_collection_id("_samples_raw")
-
 
 
 def sampleIndividuals(pop, param):
@@ -65,8 +65,6 @@ def sampleIndividuals(pop, param):
     return True
 
 
-
-
 def _storeIndividualSample(popID, dim, ssize, generation, mutation, popsize, sim_id, sample):
     IndividualSample(dict(
         simulation_time=generation,
@@ -79,8 +77,6 @@ def _storeIndividualSample(popID, dim, ssize, generation, mutation, popsize, sim
         sample=sample
     )).m.insert()
     return True
-
-
 
 
 class IndividualSample(Document):

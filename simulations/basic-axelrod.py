@@ -8,102 +8,68 @@ import simuOpt, sys
 simuOpt.setOptions(alleleType='long',optimized=False,quiet=True)
 import simuPOP as sim
 import uuid
-import ctpy.data as data
-import ctpy.utils as utils
-import ctpy.math as cpm
+import rapanuisim.data as data
+import rapanuisim.utils as utils
+import rapanuisim.math as cpm
 import ming
 import logging as log
 import pprint as pp
-
+import argparse
 
 """
 This program simulates the Axelrod model of cultural differentiation with and without noise in a single
 population
 """
 
-
-options = [
-    {
-        'name':'popsize',
-        'default':1000,
-        'label':'Population Size',
-        'type': 'integer',
-        'validator': 'popsize > 0',
-    },
-    {
-        'name':'stepsize',
-        'default':100,
-        'label':'Interval Between Data Samples',
-        'type': 'integer',
-        'validator': 'stepsize > 0',
-    },
-    {
-        'name':'length',
-        'default':10000,
-        'label':'Length of simulation sample (in generations) after stationarity reached',
-        'type': 'integer',
-        'validator': 'length > 0',
-    },
-    {
-        'name':'replications',
-        'default':5,
-        'label':'Number of populations to simulate in parallel',
-        'type': 'integer',
-        'validator': 'replications > 0',
-    },
-    # {
-    #     'name':'samplesize',
-    #     'default':30,
-    #     'label':'Size of sample to take each generation for allele counting',
-    #     'type': 'integer',
-    #     'validator': 'samplesize > 0',
-    # },
-    {
-        'name':'mutationrate',
-        'default':0.001,
-        'label':'Rate of individual innovations/mutations per generation (i.e., noise factor)',
-        'type': 'number',
-        'validator': 'mutationrate > 0.0',
-    },
-    {
-        'name':'numloci',
-        'default' : 2,
-        'label' : 'Number of loci to model (number of "features")',
-        'type' : 'integer',
-        'validator' : 'numloci > 0',
-    },
-    {
-        'name':'states',
-        'default' : 2,
-        'label' : 'Number of states each locus or feature can take',
-        'validator' : 'states > 1',
-    },
-    {
-        'name' : 'experiment_name',
-        'default' : 'default',
-        'label' : 'Name of experiment to prefix database tables',
-        'type' : 'string',
-    }
-]
-
-
 # get all parameters
-pars = simuOpt.Params(options, doc='This program simulates the Axelrod model of cultural differentiation with and without noise')
-# cancelled
-if not pars.getParam():
-    sys.exit(1)
+args = argparse.ArgumentParser()
+args.add_argument("--popsize",
+                  default=1000,
+                  type=int,
+                  help="Population Size")
+args.add_argument("--stepsize",
+                  default=100,
+                  type=int,
+                  help="Interval Between Data Samples")
+args.add_argument("--length",
+                  default=10000,
+                  type=int,
+                  help="Length of simulation sample (in generations) after stationarity reached")
+args.add_argument("--replications",
+                  default=5,
+                  type=int,
+                  help="Number of populations to simulate in parallel")
+args.add_argument("--mutationrate",
+              default=0.001,
+              type=float,
+              help="Rate of individual innovations/mutations per generation (i.e., noise factor)")
+args.add_argument("--numloci",
+              default=2,
+              type=int,
+              help="Number of loci to model (number of features)")
+args.add_argument("--states",
+              default=2,
+              type=int,
+              help="Number of states each locus or feature can take")
+args.add_argument("--experiment_name",
+              default="ct_",
+              help="Name of experiment to prefix database tables")
+args.add_argument("--samplesize",
+                  default=30,
+                  type=int,
+                  help="Size of sample to take each generation for allele counting.")
+args = args.parse_args()
 
 # we're not loading a config file here, taking defaults
 config_file = None
 simconfig = utils.CTPyConfiguration(config_file)
 
-
 log.basicConfig(level=log.DEBUG, format='%(asctime)s %(levelname)s: %(message)s')
 
-log.debug("experiment name: %s", pars.experiment_name)
+log.debug("experiment name: %s", args.experiment_name)
 log.debug("NOTE:  This interactive simulation always sends data to MongoDB instance on localhost")
 
-data.set_experiment_name(pars.experiment_name)
+data.set_experiment_name(args.experiment_name)
 data.set_database_hostname("localhost")
 data.set_database_port("27017")
 config = data.getMingConfiguration()
@@ -111,27 +77,22 @@ ming.configure(**config)
 
 sim_id = uuid.uuid4().urn
 
-
-
 log.info("Beginning simulation run: %s", sim_id)
 
-
-beginCollectingData = cpm.expectedIAQuasiStationarityTimeHaploid(pars.popsize,pars.mutationrate)
+beginCollectingData = cpm.expectedIAQuasiStationarityTimeHaploid(args.popsize,args.mutationrate)
 log.info("Starting data collection at generation: %s", beginCollectingData)
 
-totalSimulationLength = beginCollectingData + pars.length
-log.info("Simulation will sample %s generations after stationarity", pars.length)
+totalSimulationLength = beginCollectingData + args.length
+log.info("Simulation will sample %s generations after stationarity", args.length)
 
+#data.storeSimulationData(args.popsize,args.mutationrate,sim_id,args.samplesize,args.replications,args.numloci,__file__,args.numalleles,simconfig.MAXALLELES)
 
+initial_distribution = utils.constructUniformAllelicDistribution(args.numloci)
 
-
-data.storeSimulationData(pars.popsize,pars.mutationrate,sim_id,pars.samplesize,pars.replications,pars.numloci,__file__,pars.numalleles,simconfig.MAXALLELES)
-
-initial_distribution = utils.constructUniformAllelicDistribution(pars.numalleles)
 log.info("Initial allelic distribution: %s", initial_distribution)
 
-pop = sim.Population(size=pars.popsize, ploidy=1, loci=pars.numloci)
-simu = sim.Simulator(pop, rep=pars.replications)
+pop = sim.Population(size=args.popsize, ploidy=1, loci=args.numloci)
+simu = sim.Simulator(pop, rep=args.replications)
 
 simu.evolve(
 	initOps = sim.InitGenotype(freq=initial_distribution),
@@ -139,12 +100,12 @@ simu.evolve(
         sim.PyOperator(func=utils.logGenerationCount, param=(), step=1000, reps=0),
     ],
 	matingScheme = sim.RandomSelection(),
-	postOps = [sim.KAlleleMutator(k=simconfig.MAXALLELES, rates=pars.mutationrate, loci=sim.ALL_AVAIL),
-        sim.PyOperator(func=data.sampleNumAlleles, param=(pars.samplesize, pars.mutationrate, pars.popsize,sim_id,pars.numloci), step=pars.stepsize,begin=beginCollectingData),
-        sim.PyOperator(func=data.sampleTraitCounts, param=(pars.samplesize, pars.mutationrate, pars.popsize,sim_id,pars.numloci), step=pars.stepsize,begin=beginCollectingData),
-        sim.PyOperator(func=data.censusTraitCounts, param=(pars.mutationrate, pars.popsize,sim_id,pars.numloci), step=pars.stepsize,begin=beginCollectingData),
-        sim.PyOperator(func=data.censusNumAlleles, param=(pars.mutationrate, pars.popsize,sim_id,pars.numloci), step=pars.stepsize,begin=beginCollectingData),
-        sim.PyOperator(func=data.sampleIndividuals, param=(pars.samplesize, pars.mutationrate, pars.popsize, sim_id,pars.numloci), step=pars.stepsize, begin=beginCollectingData),
+	postOps = [sim.KAlleleMutator(k=simconfig.MAXALLELES, rates=args.mutationrate, loci=sim.ALL_AVAIL),
+        sim.PyOperator(func=data.sampleNumAlleles, param=(args.samplesize, args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
+        sim.PyOperator(func=data.sampleTraitCounts, param=(args.samplesize, args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
+        sim.PyOperator(func=data.censusTraitCounts, param=(args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
+        sim.PyOperator(func=data.censusNumAlleles, param=(args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
+        #sim.PyOperator(func=data.sampleIndividuals, param=(args.samplesize, args.mutationrate, args.popsize, sim_id,args.numloci), step=args.stepsize, begin=beginCollectingData),
 		],	
 	gen = totalSimulationLength,
 )

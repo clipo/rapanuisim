@@ -46,7 +46,8 @@ modules = [ individual_sample, trait_count_population, trait_count_sample,
            experiment_tracking,
            pergeneration_stats_postclassification,
            persimrun_stats_postclassification,
-           pergeneration_stats_traits]
+           pergeneration_stats_traits,
+            individual_sample]
 
 
 def getMingConfiguration():
