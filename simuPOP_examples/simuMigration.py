@@ -8,7 +8,8 @@ This program demonstrates the effect of migration by rate which results in
 changes of allele frequencies among subpopulations.
 """
 
-import simuOpt, os, sys, types, time
+import simuOpt as sim
+import os, sys, types, time
 from simuPOP import *
 from simuOpt import *
 import argparse
@@ -26,7 +27,7 @@ def simuMigration(subPopSize, numOfSubPops, m, generations, numLoci):
     '''Simulate the change of allele frequencies among subpopulations as a result of migration.'''
     # diploid population, one chromosome with 1 locus
     # random mating with sex
-    pop = Population(size=[subPopSize] * numOfSubPops, loci=numLoci, infoFields=['migrate_to'] )
+    pop = Population(size=[subPopSize] * numOfSubPops, loci=numLoci, infoFields=['migrate_to'], ancGen=-1, ploidy=1 )
     # set initial allele frequencies to each subpopulation
     # Rule of initialization is to use a list of numbers, which have counts equal to number of
     # subpopulations and been set evenly distributed between 0 and 1.
@@ -69,8 +70,9 @@ def simuMigration(subPopSize, numOfSubPops, m, generations, numLoci):
                    stmts='freq = [subPop[x]["alleleFreq"][0][0] for x in range(%i)]' % numOfSubPops, step=s),
 
         ],
-        matingScheme=RandomMating(),
+        matingScheme=RandomMating(ops=CloneGenoTransmitter()),
         postOps=[
+            KAlleleMutator(k=1, rates=0.01),
             Migrator(rate=a),
             plotter,
         ],
@@ -94,7 +96,7 @@ if __name__ == '__main__':
                       type=float,
                       help="Migration Rate")
     args.add_argument("--generations",
-                      default=200,
+                      default=1000,
                       type=int,
                       help="Generations")
     args.add_argument("--numLoci",

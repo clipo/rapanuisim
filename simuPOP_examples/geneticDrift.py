@@ -6,6 +6,7 @@ This program demonstrates changes of allele frequency on single locus due to gen
 import simuOpt, os, sys, time
 from simuPOP import *
 import argparse
+import rapanuisim.utils as utils
 
 try:
     from simuPOP.plotter import VarPlotter
@@ -20,7 +21,10 @@ def simuGeneticDrift(popSize=100, p=0.2, generations=100, replications=5):
     '''Simulate the Genetic Drift as a result of random mating.'''
     # diploid population, one chromosome with 1 locus
     # random mating with sex
-    pop = Population(size=popSize, loci=[1], ploidy=1)
+    pop = Population(size=popSize, loci=args.numloci)
+
+    initial_distribution = utils.constructUniformAllelicDistribution(args.numloci)
+
     simu = Simulator(pop, rep=replications)
 
     if useRPy:
@@ -65,7 +69,7 @@ if __name__ == '__main__':
                       type=int,
                       help="Population Size")
     args.add_argument("--p",
-                      default=0.2,
+                      default=0.05,
                       type=float,
                       help="Initial Allele Frequency")
     args.add_argument("--generations",
@@ -73,9 +77,13 @@ if __name__ == '__main__':
                       type=int,
                       help="Number of Generations")
     args.add_argument("--replications",
-                      default=5,
+                      default=8,
                       type=int,
                       help="Number of Replicates")
+    args.add_argument("--numloci",
+                      default=30,
+                      type=int,
+                      help="Number of loci to model (number of features)")
     args = args.parse_args()
 
     simuGeneticDrift(args.popSize, args.p, args.generations, args.replications)

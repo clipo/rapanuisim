@@ -2,7 +2,6 @@
 # Chapter 5 - Simulating population structure using island and stepping-stone models
 # page 138
 
-from __future__ import division
 from collections import defaultdict, OrderedDict
 from copy import deepcopy
 import simuPOP as sp
@@ -52,12 +51,11 @@ post_ops['fst_accumulation'] = sp.PyOperator(update_accumulator, param=('fst', '
 mating_scheme =  sp.RandomMating()
 
 sim = sp.Simulator(pops, rep=len(migs))
-sim.evolve(initOps=init_ops,
-        preOps= pre_ops.values(),
-        postOps=post_ops.values(),
-        matingScheme=mating_scheme,
-        gen=num_gens
-)
+sim.evolve(initOps=list(init_ops.values()),
+           preOps=list(pre_ops.values()),
+           postOps=list(post_ops.values()),
+           matingScheme=mating_scheme,
+           gen=num_gens)
 
 import seaborn as sns
 sns.set_style('white')
