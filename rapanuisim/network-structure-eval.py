@@ -20,7 +20,8 @@ class NetworkModel(object):
     NetworkModel implements a full "demographic model" in simuPOP terms,
     that is, it manages the size and existence of subpopulations, and the
     migration matrix between them.  The basic data for this model is derived
-    by importing a NetworkX network in the form of a GML format file.
+    by the creation of a random small-world NetworkX network in the (watts_strogatz_graph) or
+    the creation of a network from a GML file.
     The network edges represent a set of subpopulations
     with unique ID's, and edges between them which are weighted.  The
     weights may be determined by any underlying model (e.g., distance,
@@ -30,25 +31,32 @@ class NetworkModel(object):
     """
 
     def __init__(self,
-                 networkmodel=None,
+                 networkmodel="smallworld",
                  simulation_id=None,
                  sim_length=1000,
                  burn_in_time=0,
                  initial_subpop_size = 0,
-                 migrationfraction = 0.05):
+                 migrationfraction = 0.01,
+                 sub_pops=5,
+                 connectedness=3,
+                 rewiring_prob=0.0):
         """
         :param networkmodel: Name of GML file
         :param sim_length: Number of generations to run the simulation
         :return:
         """
-        #BaseMetapopulationModel.__init__(self, numGens = sim_length, initSize = initial_size, infoFields = info_fields, ops = ops)
-        self.networkmodel = networkmodel
+        #BaseMetapopulationModel.__init__(self, numGens = sim_length, initSize = initial_size, infoFields = info_fields,
+        # ops = ops, sub_pops = num_subpops, connectedness = connectedness, rewiring_prob=rewiring_prob)
+        self.networkmodel = networkmodel        #default is small world - else GML file location
         self.sim_length = sim_length
         self.info_fields = 'migrate_to'
         self.sim_id = simulation_id
         self.burn_in_time = burn_in_time
         self.init_subpop_size = initial_subpop_size
         self.migration_fraction = migrationfraction
+        self.connectedness = connectedness  # default of 3
+        self.sub_pops = sub_pops            # default of 5
+        self.rewiring_prob = rewiring_prob  # default of 0.0
 
         self._cached_migration_matrix = None
 
@@ -74,11 +82,15 @@ class NetworkModel(object):
         and construct aNetworkX networkmodel from the GML file
         """
         if (self.networkmodel=="smallworld"):
-            G = nx.watts_strogatz_graph(self.number_of_sub_pops, self.connectedness, 0)
-        log.debug("Opening  GML file %s:",  self.networkmodel)
-        network = nx.read_gml(self.networkmodel)
-        log.debug("network nodes: %s", '|'.join(sorted(network.nodes())))
-        self.network = network
+            log.debug("Creating small world Watts-Strogatz network")
+            network = nx.watts_strogatz_graph(self.sub_pops, self.connectedness, 0)
+            log.debug("network nodes: %s", '|'.join(sorted(network.nodes())))
+            self.network = network
+        else:
+            log.debug("Opening  GML file %s:",  self.networkmodel)
+            network = nx.read_gml(self.networkmodel)
+            log.debug("network nodes: %s", '|'.join(sorted(network.nodes())))
+            self.network = network
 
     def _calculate_initial_population_configuration(self):
         # num subpops is just the number of vertices in the first graph slice.
