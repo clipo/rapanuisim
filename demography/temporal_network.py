@@ -121,7 +121,7 @@ class TemporalNetwork(object):
             log.debug("Parsing GML file %s:  file number %s", file, file_number)
             file_name= zf.extract(file)
             slice = nx.read_gml(file_name)
-            # log.debug("slice nodes: %s", '|'.join(sorted(slice.nodes())))
+            log.debug("slice nodes: %s", '|'.join(sorted(slice.nodes())))
             self.network_slices[int(file_number)] = slice
 
         slices = sorted(self.network_slices.keys())

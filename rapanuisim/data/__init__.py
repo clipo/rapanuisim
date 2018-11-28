@@ -7,6 +7,7 @@
 
 import logging as log
 
+from rapanuisim.data.individual_sample import IndividualSample
 from rapanuisim.data.richness_sample import sampleNumAlleles
 from rapanuisim.data.trait_count_sample import sampleTraitCounts
 from rapanuisim.data.simulation_data import storeSimulationData, SimulationRun
@@ -21,7 +22,7 @@ from rapanuisim.data.pergeneration_stats_postclassification import PerGeneration
 from rapanuisim.data.pergeneration_stats_traits import PerGenerationStatsTraits
 from rapanuisim.data.individual_sample_classified import IndividualSampleClassified
 from rapanuisim.data.individual_sample_fulldataset import IndividualSampleFullDataset
-from rapanuisim.data.individual_sample import IndividualSample
+
 from rapanuisim.data.persimrun_stats_postclassification import PerSimrunStatsPostclassification
 
 experiment_name = "test"
@@ -40,14 +41,13 @@ dbport = "override"
 modules = [ individual_sample, trait_count_population, trait_count_sample,
            richness_sample, richness_population,
            simulation_data, trait_lifetime, classification_data,
-           classification_mode_definitions,
-           individual_sample_classified,
-          individual_sample_fulldataset,
+           classification_mode_definitions, individual_sample,
+           individual_sample_classified, individual_sample_fulldataset,
            experiment_tracking,
            pergeneration_stats_postclassification,
            persimrun_stats_postclassification,
            pergeneration_stats_traits,
-            individual_sample]
+        ]
 
 
 def getMingConfiguration():

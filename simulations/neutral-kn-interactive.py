@@ -107,7 +107,7 @@ simu.evolve(
         sim.PyOperator(func=data.sampleTraitCounts, param=(args.samplesize, args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
         sim.PyOperator(func=data.censusTraitCounts, param=(args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
         sim.PyOperator(func=data.censusNumAlleles, param=(args.mutationrate, args.popsize,sim_id,args.numloci), step=args.stepsize,begin=beginCollectingData),
-        sim.PyOperator(func=data.sampleIndividuals, param=(args.samplesize, args.mutationrate, args.popsize, sim_id,args.numloci), step=args.stepsize, begin=beginCollectingData),
+        #sim.PyOperator(func=data.sampleIndividuals, param=(args.samplesize, args.mutationrate, args.popsize, sim_id,args.numloci), step=args.stepsize, begin=beginCollectingData),
 		],	
 	gen = totalSimulationLength,
 )

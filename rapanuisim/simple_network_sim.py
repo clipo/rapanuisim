@@ -163,26 +163,23 @@ def main():
         ],
         matingScheme=sim.RandomSelection(subPopSize=networkmodel),
         postOps=[sim.KAlleleMutator(k=MAXALLELES, rates=config.innovrate, loci=sim.ALL_AVAIL),
-                 sim.PyOperator(func=rapanuisim.data.sampleNumAlleles,
-                                param=(config.samplefraction, config.innovrate, config.popsize, sim_id, config.numloci),
-                                step=config.stepsize, begin=beginCollectingData),
-                 sim.PyOperator(func=rapanuisim.data.sampleTraitCounts,
-                                param=(config.samplefraction, config.innovrate, config.popsize, sim_id, config.numloci),
-                                step=config.stepsize, begin=beginCollectingData),
-                 sim.PyOperator(func=rapanuisim.data.censusTraitCounts,
-                                param=(config.innovrate, config.popsize, sim_id, config.numloci), step=config.stepsize,
-                                begin=beginCollectingData),
-                 sim.PyOperator(func=rapanuisim.data.censusNumAlleles,
-                                param=(config.innovrate, config.popsize, sim_id, config.numloci), step=config.stepsize,
-                                begin=beginCollectingData),
-                 sim.PyOperator(func=rapanuisim.data.sampleIndividuals,
-                                param=(config.samplefraction, config.innovrate, config.popsize, sim_id, config.numloci),
-                                step=config.stepsize, begin=beginCollectingData),
-
+#                  sim.PyOperator(func=rapanuisim.data.sampleNumAlleles,
+#                                 param=(config.samplefraction, config.innovrate, config.popsize, sim_id, config.numloci),
+#                                 step=1, begin=beginCollectingData),
+#                  sim.PyOperator(func=rapanuisim.data.sampleTraitCounts,
+#                                 param=(config.samplefraction, config.innovrate, config.popsize, sim_id, config.numloci),
+#                                 step=1, begin=beginCollectingData),
+#                  sim.PyOperator(func=rapanuisim.data.censusTraitCounts,
+#                                 param=(config.innovrate, config.popsize, sim_id, config.numloci), step=1,
+#                                 begin=beginCollectingData),
+#                  sim.PyOperator(func=rapanuisim.data.censusNumAlleles,
+#                                 param=(config.innovrate, config.popsize, sim_id, config.numloci), step=1,
+#                                 begin=beginCollectingData)
+#                  #sim.PyOperator(func=rapanuisim.data.sampleIndividuals,
+#                  ##               param=(config.samplefraction, config.innovrate, config.popsize, sim_id, config.numloci),
+#                  #               step=1, begin=beginCollectingData),
         ],
-        gen=config.simlength,
-
-    )
+        gen=3000)
 
     endtime = time()
     elapsed = endtime - start

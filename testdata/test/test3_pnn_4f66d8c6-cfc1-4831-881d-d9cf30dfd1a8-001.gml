@@ -1,5 +1,5 @@
 graph [
-  name "empty_graph(32)"
+  name "island network"
   node [
     id 0
     label "assemblage-105-207"

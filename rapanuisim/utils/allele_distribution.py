@@ -13,8 +13,6 @@
 
 """
 
-
-
 def constructUniformAllelicDistribution(numalleles):
     """Constructs a uniform distribution of N alleles in the form of a frequency list.
 
