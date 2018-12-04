@@ -1,166 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc8c1de-4a7b-4fa3-b876-717d02a430cf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rapanuisim/network-structure-eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/classification_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/classification_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/classification_mode_definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/classification_mode_definitions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/individual_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/individual_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/individual_sample_classified.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/individual_sample_classified.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/individual_sample_fulldataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/individual_sample_fulldataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/pergeneration_stats_postclassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/pergeneration_stats_postclassification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/pergeneration_stats_traits.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/pergeneration_stats_traits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/persimrun_stats_postclassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/persimrun_stats_postclassification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/richness_population.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/richness_population.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/richness_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/richness_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/simulation_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/simulation_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/trait_count_population.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/trait_count_population.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/trait_count_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/trait_count_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/data/trait_lifetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/data/trait_lifetime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CTPy/ctpy/math/diversity.py" beforeDir="false" afterPath="$PROJECT_DIR$/../CTPy/ctpy/math/diversity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RapaNuiSim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RapaNuiSim.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9bc8c1de-4a7b-4fa3-b876-717d02a430cf" name="Default" comment="worked on example -- the first 1/2 works...">
+      <change afterPath="$PROJECT_DIR$/rapanuisim/network_model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rapanuisim/network_model/network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demography/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/demography/network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demography/temporal_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/demography/temporal_network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/Basic_SimuPOP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Basic_SimuPOP.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/Pop_Structure.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Pop_Structure.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapanuisim/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapanuisim/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapanuisim/network_model/network-structure-eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapanuisim/network_model/network-structure-eval.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rapanuisim/simple_network_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapanuisim/simple_network_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapanuisim/utils/allele_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapanuisim/utils/allele_distribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulations/neutral-kn-interactive.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/neutral-kn-interactive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/island_test.gml" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/island_test.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/test/test3_pnn_4f66d8c6-cfc1-4831-881d-d9cf30dfd1a8-001.gml" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/test/test3_pnn_4f66d8c6-cfc1-4831-881d-d9cf30dfd1a8-001.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/074a4538-f626-11e5-8d68-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/19e18c00-f627-11e5-91ed-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/77e9cbde-f625-11e5-a6c9-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.05-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geographic-distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-geography.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-continuity-mst-of-min.png.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency-pairs.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-frequency.vna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-count-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-annotated.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity-lineage-annotated-chronological.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-minmax-by-weight-continuity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.gml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seriationCT/testdata/exp-template/seriation-output/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered/92a8426a-f626-11e5-9f09-f45c899928c7-0-sampled-500-slicestratified-0.1-resample-0-0.1-unimodal-filtered-sumgraphbycount-continuity.png" beforeDir="false" />
     </list>
     <ignored mask="rest-client.private.env.json" />
     <ignored mask="http-client.private.env.json" />
@@ -191,70 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rapanuisim/simple_network_sim.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="163" column="64" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="64" />
-              <folding>
-                <element signature="e#519#533#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rapanuisim/data/trait_count_sample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-              <folding>
-                <element signature="e#236#257#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebooks/Basic_SimuPOP.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebooks/Pop_Structure.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch-file.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rapanuisim/network-structure-eval.py">
+        <entry file="file://$PROJECT_DIR$/rapanuisim/network_model/network-structure-eval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="76" column="87" lean-forward="true" selection-start-line="76" selection-start-column="87" selection-end-line="76" selection-end-column="87" />
+            <state relative-caret-position="504">
+              <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -263,27 +53,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demography/temporal_network.py">
+        <entry file="file:///anaconda3/lib/python3.6/site-packages/IPython/core/interactiveshell.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="515" selection-start-line="172" selection-start-column="1" selection-end-line="515" />
+            <state relative-caret-position="41850">
+              <caret line="2860" selection-start-line="2860" selection-end-line="2860" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebooks/test_graph.gml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="37" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebooks/network.py">
+        <entry file="file://$PROJECT_DIR$/demography/network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-449">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#230#251#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -320,6 +111,9 @@
       <find>MAXALLELES</find>
       <find>sub_pop</find>
       <find>sub_pop_size</find>
+      <find>Genotyp</find>
+      <find>smallworld</find>
+      <find>tight</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -329,10 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rapanuisim/data/trait_count_population.py" />
-        <option value="$PROJECT_DIR$/rapanuisim/math/__init__.py" />
-        <option value="$PROJECT_DIR$/rapanuisim/richness_sample.py" />
-        <option value="$PROJECT_DIR$/rapanuisim/trait_count_sample.py" />
         <option value="$PROJECT_DIR$/rapanuisim/individual_sample.py" />
         <option value="$PROJECT_DIR$/rapanuisim/trait_lifetime.py" />
         <option value="$PROJECT_DIR$/rapanuisim/trait_count_population.py" />
@@ -358,7 +148,6 @@
         <option value="$PROJECT_DIR$/testdata/test_graph.gml" />
         <option value="$PROJECT_DIR$/rapanuisim/simpl.py" />
         <option value="$PROJECT_DIR$/demography/temporal_network.py" />
-        <option value="$PROJECT_DIR$/demography/network.py" />
         <option value="$PROJECT_DIR$/rapanuisim/pop_structure_test.py" />
         <option value="$PROJECT_DIR$/simuPOP_examples/simuOptParam2argparse.py" />
         <option value="$PROJECT_DIR$/simuPOP_examples/simuOptToParamsConversion.py" />
@@ -374,20 +163,24 @@
         <option value="$PROJECT_DIR$/notebooks/simupop_testing.ipynb" />
         <option value="$PROJECT_DIR$/rapanuisim/data/__init__.py" />
         <option value="$PROJECT_DIR$/simuPOP_examples/islandMigration-FromCookbook.py" />
-        <option value="$PROJECT_DIR$/rapanuisim/simple_network_sim.py" />
         <option value="$PROJECT_DIR$/notebooks/Basic_SimuPOP.ipynb" />
         <option value="$PROJECT_DIR$/notebooks/Pop_Structure.ipynb" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch-file.py" />
-        <option value="$PROJECT_DIR$/rapanuisim/network-structure-eval.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/notebooks/network.py" />
+        <option value="$PROJECT_DIR$/rapanuisim/simple_network_sim.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+        <option value="$PROJECT_DIR$/rapanuisim/network-structure-eval.py" />
+        <option value="$PROJECT_DIR$/rapanuisim/network_model/network.py" />
+        <option value="$PROJECT_DIR$/demography/network.py" />
+        <option value="$PROJECT_DIR$/rapanuisim/network_model/network-structure-eval.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="719" />
-    <option name="y" value="344" />
-    <option name="width" value="1280" />
-    <option name="height" value="663" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1356" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -420,6 +213,24 @@
             <path>
               <item name="RapaNuiSim" type="b2602c69:ProjectViewProjectNode" />
               <item name="RapaNuiSim" type="462c0819:PsiDirectoryNode" />
+              <item name="rapanuisim" type="462c0819:PsiDirectoryNode" />
+              <item name="network_model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RapaNuiSim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RapaNuiSim" type="462c0819:PsiDirectoryNode" />
+              <item name="rapanuisim" type="462c0819:PsiDirectoryNode" />
+              <item name="sampling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RapaNuiSim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RapaNuiSim" type="462c0819:PsiDirectoryNode" />
+              <item name="rapanuisim" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RapaNuiSim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RapaNuiSim" type="462c0819:PsiDirectoryNode" />
               <item name="simulations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,18 +259,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rapanuisim/network_model" />
+      <recent name="$PROJECT_DIR$/rapanuisim" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/simulation" />
+      <recent name="$PROJECT_DIR$/notebooks" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/notebooks" />
       <recent name="$PROJECT_DIR$/rapanuisim" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/testdata" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rapanuisim" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/simulation" />
-      <recent name="$PROJECT_DIR$/notebooks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -474,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch">
+  <component name="RunManager" selected="Python.network-structure-eval">
     <configuration name="rapaNui" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="RapaNuiSim" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -651,13 +463,16 @@
       <module name="RapaNuiSim" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="/anaconda3/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rapanuisim" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapanuisim/network-structure-eval.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapanuisim/network_model/network-structure-eval.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -714,6 +529,9 @@
       <module name="RapaNuiSim" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -832,7 +650,13 @@
       <workItem from="1543101017797" duration="10319000" />
       <workItem from="1543180125080" duration="56000" />
       <workItem from="1543191735468" duration="3279000" />
-      <workItem from="1543369286381" duration="8072000" />
+      <workItem from="1543369286381" duration="9589000" />
+      <workItem from="1543441756868" duration="16168000" />
+      <workItem from="1543543255030" duration="949000" />
+      <workItem from="1543579785749" duration="18000" />
+      <workItem from="1543584670650" duration="8280000" />
+      <workItem from="1543676459840" duration="8185000" />
+      <workItem from="1543962135233" duration="198000" />
     </task>
     <task id="LOCAL-00001" summary="changed to Network.py (rather than temporal_network) to strip out the stuff for putting in slices. I dont think we are going to need that.">
       <created>1542462212847</created>
@@ -897,18 +721,31 @@
       <option name="project" value="LOCAL" />
       <updated>1543357667705</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="worked on example -- the first 1/2 works...">
+      <created>1543435464477</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543435464477</updated>
+    </task>
+    <task id="LOCAL-00011" summary="working on stats">
+      <created>1543676002431</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1543676002431</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21726000" />
+    <option name="totallyTimeSpent" value="64185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="788" y="231" width="1701" height="1048" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="2560" height="1356" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2411091" />
-      <window_info id="Structure" order="1" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.036536936" />
+      <window_info id="Structure" order="1" weight="0.10087371" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -920,20 +757,20 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293944" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3279743" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26823387" side_tool="true" visible="true" weight="0.3965702" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.7317661" visible="true" weight="0.3965702" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26898223" side_tool="true" weight="0.42994243" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.73101777" visible="true" weight="0.10636584" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3287858" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.48490232" visible="true" weight="0.32911393" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.4752029" visible="true" weight="0.42692614" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49801588" weight="0.3293011" />
-      <window_info anchor="right" x="0" y="0" width="367" height="648" id="Documentation" order="5" sideWeight="0.5150977" side_tool="true" weight="0.32911393" />
+      <window_info anchor="right" x="0" y="0" width="367" height="648" id="Documentation" order="5" sideWeight="0.52479714" side_tool="true" visible="true" weight="0.42692614" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2411091" />
-      <window_info id="Structure" order="1" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13860206" />
+      <window_info id="Structure" order="1" weight="0.10087371" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -945,16 +782,16 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293944" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3279743" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26742426" side_tool="true" weight="0.33677992" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.7325758" visible="true" weight="0.3965702" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26898223" side_tool="true" weight="0.42994243" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.73101777" weight="0.2746845" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3287858" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48490232" visible="true" weight="0.32911393" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.47799385" weight="0.16719618" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49801588" weight="0.3293011" />
-      <window_info anchor="right" x="0" y="0" width="367" height="648" id="Documentation" order="5" sideWeight="0.5150977" side_tool="true" visible="true" weight="0.32911393" />
+      <window_info anchor="right" x="0" y="0" width="367" height="648" id="Documentation" order="5" sideWeight="0.52200615" side_tool="true" weight="0.16719618" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -968,7 +805,8 @@
     <MESSAGE value="updated file to match new version of simuPOP" />
     <MESSAGE value="added example from the Antao cookbook for island migration" />
     <MESSAGE value="worked on example -- the first 1/2 works..." />
-    <option name="LAST_COMMIT_MESSAGE" value="worked on example -- the first 1/2 works..." />
+    <MESSAGE value="working on stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on stats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -995,42 +833,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rapanuisim/utils/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rapanuisim/ct.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rapanuisim/math/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/test/test3_pnn_4f66d8c6-cfc1-4831-881d-d9cf30dfd1a8-001.gml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/test-network.gml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rapanuisim/simpl.py" />
     <entry file="file://$PROJECT_DIR$/testdata/island_test.gml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1170,34 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demography/network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="e#230#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simuPOP_examples/islandMigration-FromCookbook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rapanuisim/utils/allele_distribution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rapanuisim/utils/configuration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1211,13 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demography/temporal_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="515" selection-start-line="172" selection-start-column="1" selection-end-line="515" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notebooks/Basic_SimuPOP.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -1225,56 +996,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebooks/network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#230#251#0" expanded="true" />
-          </folding>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch-file.py" />
+    <entry file="file://$PROJECT_DIR$/notebooks/Pop_Structure.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebooks/test_graph.gml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/rapanuisim/simple_network_sim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="163" column="64" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="64" />
+        <state relative-caret-position="714">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
           <folding>
             <element signature="e#519#533#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebooks/Pop_Structure.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="16" />
+    <entry file="file://$PROJECT_DIR$/rapanuisim/utils/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3293">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch-file.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+    <entry file="file://$PROJECT_DIR$/rapanuisim/utils/allele_distribution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demography/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#230#285#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rapanuisim/network-structure-eval.py">
+    <entry file="file://$PROJECT_DIR$/rapanuisim/network_model/network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="76" column="87" lean-forward="true" selection-start-line="76" selection-start-column="87" selection-end-line="76" selection-end-column="87" />
+        <state relative-caret-position="2730">
+          <caret line="187" column="32" selection-start-line="187" selection-start-column="32" selection-end-line="187" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rapanuisim/sampling/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demography/temporal_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7485">
+          <caret line="511" column="55" selection-start-line="511" selection-start-column="55" selection-end-line="511" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebooks/test_graph.gml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebooks/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2595">
+          <caret line="178" selection-start-line="16" selection-end-line="178" />
+          <folding>
+            <element signature="e#230#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+    <entry file="file://$PROJECT_DIR$/rapanuisim/network_model/network-structure-eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/IPython/core/interactiveshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41850">
+          <caret line="2860" selection-start-line="2860" selection-end-line="2860" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demography/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="40" />
         </state>
       </provider>
     </entry>

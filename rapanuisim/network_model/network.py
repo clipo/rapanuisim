@@ -1,21 +1,10 @@
-#!/usr/bin/env python
-# Copyright (c) 2015.  Mark E. Madsen <mark@madsenlab.org>
-#
-# This work is licensed under the terms of the Apache Software License, Version 2.0.  See the file LICENSE for details.
 
-"""
-Description here
-
-"""
 import networkx as nx
 import numpy as np
 import re
 from rapanuisim import math
 import simuPOP as sim
 import logging as log
-import matplotlib.pyplot as plt
-from matplotlib import colors as mcolors
-import sys
 
 class NetworkModel(object):
     """
@@ -41,17 +30,14 @@ class NetworkModel(object):
                  migrationfraction=0.01,
                  sub_pops=5,
                  connectedness=3,
-                 rewiring_prob=0.0,
-                 save_figs=True,
-                 network_iteration=1):
+                 rewiring_prob=0.0):
         """
         :param networkmodel: Name of GML file
         :param sim_length: Number of generations to run the simulation
         :return:
         """
         # BaseMetapopulationModel.__init__(self, numGens = sim_length, initSize = initial_size, infoFields = info_fields,
-        # ops = ops, sub_pops = num_subpops, connectedness = connectedness, rewiring_prob=rewiring_prob,
-        # save_figs= boolean, iteration=number)
+        # ops = ops, sub_pops = num_subpops, connectedness = connectedness, rewiring_prob=rewiring_prob)
         self.networkmodel = networkmodel  # default is small world - else GML file location
         self.sim_length = sim_length
         self.info_fields = 'migrate_to'
@@ -64,8 +50,6 @@ class NetworkModel(object):
         self.rewiring_prob = rewiring_prob  # default of 0.0
         self._cached_migration_matrix = None
         self.subpopulation_names = []
-        self.save_figs=save_figs
-        self.network_iteration=network_iteration
 
         # Parse the GML files and create a list of NetworkX objects
         self._parse_network_model()
@@ -96,8 +80,6 @@ class NetworkModel(object):
             log.debug("network nodes: %s", '|'.join(sorted(network.nodes())))
             self.network = network
         self.print_graph()
-        #if self.save_figs == True:
-        self.save_graph()
 
     def _calculate_initial_population_configuration(self):
         # num subpops is just the number of vertices in the first graph slice.
@@ -132,14 +114,13 @@ class NetworkModel(object):
 
     def _calculate_migration_matrix(self):
         g_mat = nx.to_numpy_matrix(self.network).astype(np.float)
-        #print("g_mat: ", g_mat)
+        print("g_mat: ", g_mat)
         # get the column totals
         rtot = np.sum(g_mat, axis=1)
         scaled = (g_mat / rtot) * self.migration_fraction
         diag = np.eye(np.shape(g_mat)[0]) * (1.0 - self.migration_fraction)
         g_mat_scaled = diag + scaled
         log.debug("scaled migration matrix: %s", g_mat_scaled.tolist())
-        #print("g_mat_scaled: ", g_mat_scaled)
         return g_mat_scaled.tolist()
 
     ###################### Public API #####################
@@ -162,26 +143,14 @@ class NetworkModel(object):
     def get_subpopulation_number(self):
         return len(self.subpopulation_names)
 
-    def get_migration_matrix(self):
-        return self._cached_migration_matrix
-
     def print_graph(self):
         """
         Show us the graph of the network.
         :return: nothing - should be a matplotlib plot
         """
         plt.subplot(111)
-        nx.draw(self.network,node_color=list(dict(mcolors.BASE_COLORS, **mcolors.CSS4_COLORS).keys())[self.network_iteration], with_labels=True, font_weight='bold')
+        nx.draw(self.network, with_labels=True, font_weight='bold')
         plt.show()
-
-    def save_graph(self):
-        """
-        Save the graph of the network.
-        :return: nothing - should be saved file
-        """
-        name = "k-%s.png" % self.connectedness
-        nx.draw(self.network,node_color=list(dict(mcolors.BASE_COLORS, **mcolors.CSS4_COLORS).keys())[self.network_iteration], with_labels=True, font_weight='bold')
-        plt.savefig(name)
 
     def __call__(self, pop):
         """
@@ -209,12 +178,11 @@ class NetworkModel(object):
         # update the migration matrix
         self._cached_migration_matrix = self._calculate_migration_matrix(gen)
 
-        sim.migrate(pop, self._cached_migration_matrix)
-        sim.stat(pop, popSize=True)
+        sp.migrate(pop, self._cached_migration_matrix)
+        sp.stat(pop, popSize=True)
         # cache the new subpopulation names and sizes for debug and logging purposes
         # before returning them to the calling function
         self.subpopulation_names = sorted(str(list(pop.subPopNames())))
         self.subpop_sizes = pop.subPopSizes()
-        #print(self.subpop_sizes)
+        print(self.subpop_sizes)
         return pop.subPopSizes()
-

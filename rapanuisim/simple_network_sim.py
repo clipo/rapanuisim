@@ -61,7 +61,7 @@ def setup(parser):
 def main():
 
     start = time()
-    MAXALLELES = 10000000
+    MAXALLELES = 10000
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment", help="provide name for experiment", required=True, type=str)
