@@ -24,9 +24,8 @@ pop_list = [100, 500, 1000]
 innovation_rate = 0.00
 MAXALLELES = 1000
 connectedness=3 ## k
-migration_rate = 0.01
 sub_pops=25
-migration_fraction=0.01
+migration_fraction=0.5
 num_starting_alleles=1000
 divisor = 100.0 / num_starting_alleles
 frac = divisor / 100.0
@@ -36,7 +35,7 @@ burn_in_time = 4000
 
 output={}
 
-k_values=[2,6,12,18,24]
+k_values=[2,6,10,20,25]
 run_param=k_values
 for k in run_param:
     output[k]=[]
@@ -117,31 +116,6 @@ def mean_confidence_interval(data, confidence=0.95):
     h = se * scipy.stats.t.ppf((1 + confidence) / 2., n-1)
     return m, m-h, m+h
 
-def spatialMigrRates(xy, r):
-    '''
-    Return a migration matrix where migration rates between two
-    subpopulations vary according to Euclidean distance between them.
-
-    xy
-        A list of (x,y) location for each subpopulation.
-
-    r
-        Migrate rate between two subpopulations is exp(-r*d_ij) where
-        d_ij is the Euclidean distance between subpopulations i and j.
-    '''
-    nSubPop = len(xy)
-    rate = []
-    for i in range(nSubPop):
-        rate.append([])
-        for j in range(nSubPop):
-            if i == j:
-                rate[-1].append(0)
-                continue
-            d_ij = math.sqrt((xy[i][0] - xy[j][0]) ** 2 + (xy[i][1] - xy[j][1]) ** 2)
-            rate[-1].append(math.exp(-1 * r * d_ij))
-    return rate
-
-
 iteration_number=-1
 for param_value in run_param:
     iteration_number += 1
@@ -161,7 +135,7 @@ for param_value in run_param:
                                          initial_subpop_size=pop_size,
                                          migrationfraction=migration_fraction,
                                          sub_pops=sub_pops,
-                                         connectedness=param_value,
+                                         connectedness=param_value, # if 0, then distance decay
                                          save_figs=save_state,
                                          network_iteration=iteration_number)
 

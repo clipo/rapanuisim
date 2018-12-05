@@ -10,11 +10,12 @@ Description here
 import networkx as nx
 import numpy as np
 import re
-from rapanuisim import math
+import math
 import simuPOP as sim
 import logging as log
 import matplotlib.pyplot as plt
 from matplotlib import colors as mcolors
+from itertools import product
 import sys
 
 class NetworkModel(object):
@@ -38,19 +39,20 @@ class NetworkModel(object):
                  sim_length=1000,
                  burn_in_time=0,
                  initial_subpop_size=0,
-                 migrationfraction=0.01,
+                 migrationfraction=0.9,
                  sub_pops=5,
                  connectedness=3,
                  rewiring_prob=0.0,
                  save_figs=True,
-                 network_iteration=1):
+                 network_iteration=1,
+                 xy=None):
         """
         :param networkmodel: Name of GML file
         :param sim_length: Number of generations to run the simulation
         :return:
         """
         # BaseMetapopulationModel.__init__(self, numGens = sim_length, initSize = initial_size, infoFields = info_fields,
-        # ops = ops, sub_pops = num_subpops, connectedness = connectedness, rewiring_prob=rewiring_prob,
+        # ops = ops, sub_pops = num_subpops, connectedness = connectedness, xy=xy rewiring_prob=rewiring_prob,
         # save_figs= boolean, iteration=number)
         self.networkmodel = networkmodel  # default is small world - else GML file location
         self.sim_length = sim_length
@@ -66,6 +68,7 @@ class NetworkModel(object):
         self.subpopulation_names = []
         self.save_figs=save_figs
         self.network_iteration=network_iteration
+        self.xy=[]
 
         # Parse the GML files and create a list of NetworkX objects
         self._parse_network_model()
@@ -74,7 +77,12 @@ class NetworkModel(object):
         self._calculate_initial_population_configuration()
 
         # prime the migration matrix
-        self._cached_migration_matrix = self._calculate_migration_matrix()
+        if self.connectedness==self.sub_pops:
+            self._cached_migration_matrix=self._spatialMigrRates()
+            print(self._cached_migration_matrix)
+            self.connectedness=self.sub_pops-1
+        else:
+            self._cached_migration_matrix = self._calculate_migration_matrix()
 
     ############### Private Initialization Methods ###############
 
@@ -83,17 +91,20 @@ class NetworkModel(object):
         Given a file,  read the GML files (format: <name>.gml)
         and construct a NetworkX networkmodel from the GML file
         """
-        if (self.networkmodel == "smallworld"):
-
+        if self.networkmodel=="smallworld":
             log.debug("Creating small world Watts-Strogatz network with %s nodes and %s connections " % (
             self.sub_pops, self.connectedness))
-            network = nx.watts_strogatz_graph(self.sub_pops, self.connectedness, 0)
+            k=self.connectedness
+            if k==self.sub_pops:
+                k=k-1
+            network = nx.watts_strogatz_graph(self.sub_pops, k, 0)
             log.debug("network nodes: %s", '|'.join(sorted(str(list(network.nodes)))))
             self.network = network
+            self.xy=self._set_xy_coordinates()
         else:
             log.debug("Opening  GML file %s:", self.networkmodel)
             network = nx.read_gml(self.networkmodel)
-            log.debug("network nodes: %s", '|'.join(sorted(network.nodes())))
+            log.debug("network nodes: %s", '|'.join(sorted(list(network.nodes()))))
             self.network = network
         self.print_graph()
         #if self.save_figs == True:
@@ -139,8 +150,45 @@ class NetworkModel(object):
         diag = np.eye(np.shape(g_mat)[0]) * (1.0 - self.migration_fraction)
         g_mat_scaled = diag + scaled
         log.debug("scaled migration matrix: %s", g_mat_scaled.tolist())
-        #print("g_mat_scaled: ", g_mat_scaled)
+        print("g_mat_scaled: ", g_mat_scaled)
+        sys.exit()
         return g_mat_scaled.tolist()
+
+    def _spatialMigrRates(self):
+        '''
+        Return a migration matrix where migration rates between two
+        subpopulations vary according to Euclidean distance between them.
+
+        xy
+            A list of (x,y) location for each subpopulation.
+
+        r
+            Migrate rate between two subpopulations is exp(-r*d_ij) where
+            d_ij is the Euclidean distance between subpopulations i and j.
+        '''
+        r=self.migration_fraction
+        xy=list(self.xy)
+        print(xy)
+        nSubPop = self.sub_pops
+        rate = []
+        for i in range(nSubPop):
+            rate.append([])
+            for j in range(nSubPop):
+                if i == j:
+                    rate[-1].append(0)
+                    continue
+                d_ij = math.sqrt((xy[i][0] - xy[j][0]) ** 2 + (xy[i][1] - xy[j][1]) ** 2)
+                rate[-1].append(math.exp(-1 * r * d_ij))
+        self._cached_migration_matrix=rate
+        return rate
+
+    def _set_xy_coordinates(self):
+        radius=100
+        pts=self.sub_pops
+        for x, y in product(range(0, int(radius) + 1, int(360 / pts)), repeat=2):
+            if x ** 2 + y ** 2 <= radius ** 2:
+                yield from set(((x, y), (x, -y), (-x, y), (-x, -y),))
+
 
     ###################### Public API #####################
 
